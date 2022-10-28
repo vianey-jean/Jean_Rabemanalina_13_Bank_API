@@ -1,10 +1,10 @@
 import React from 'react'
 import { Outlet } from "react-router-dom";
-import Tableau2Bord from '../controller/tableau2Bord'
-import Home from '../controller/home'
-import ErrorPage from '../controller/errorPage'
-import SideBar from '../view/sideBar'
-import Nav from '../view/nav'
+import Header from '../components/Header'
+import Home from '../pages/Home'
+import SignIn from '../pages/loginPage/SingIn'
+import Footer from '../components/Footer'
+import Error from '../pages/Error'
 
 
 export const routes = [
@@ -17,12 +17,12 @@ export const routes = [
               element: <Home />,
           },
           {
-              path: "/:userId",
-              element: <Tableau2Bord />,  //on selection id par api
-          },
+            path: "/signIn",
+            element: <SignIn />,
+        },
           {
               path: "*",
-              element: <ErrorPage />,
+              element: <Error />,
           },
       ],
   },
@@ -31,11 +31,11 @@ export const routes = [
 function Layout () {  // par défaut, c'est header, sidebar et outlet qui change
   return (
 <>
-  <Nav />
-  <SideBar />
+  <Header />
   <section className="elementsToDisplay">
       <Outlet />
   </section>
+  <Footer />
   </>
   );
 }
