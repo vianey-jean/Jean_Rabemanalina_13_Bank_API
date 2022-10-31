@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import "./logIn.scss";
 
 function Login() {
@@ -32,9 +33,12 @@ function Login() {
           />
           <label htmlFor="remember-me">Remember me</label>
         </div>
+        <Link  to='/user'>
         <button className="sign-in-button" type="submit">
           Sign in
         </button>
+        </Link>
+        
       </form>
       <span className="errorMessage"></span>
     </section>

@@ -4,7 +4,7 @@ import Nav from '../components/nav/nav'
 import Home from '../pages/home/home'
 import Footer from '../components/footer/footer'
 import LogIn from '../pages/logIn/logIn'
-
+import User from '../pages/user/user'
 
 export const routes = [
   {
@@ -19,6 +19,10 @@ export const routes = [
             path: "/logIn",
             element: <LogIn />,
         },
+        {
+          path: "/user",
+          element: <User />,
+      },
       
       ],
   },
