@@ -1,7 +1,5 @@
-/**
- * Component - Footer
- * @returns {React.ReactElement} JSX.Element - Footer component
- */
+
+import './footer.scss'
 
 function Footer() {
   return (

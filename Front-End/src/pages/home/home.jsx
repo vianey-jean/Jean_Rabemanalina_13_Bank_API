@@ -1,7 +1,7 @@
-import iconChat from '../assets/img/icon-chat.png'
-import iconMoney from '../assets/img/icon-money.png'
-import iconSecurity from '../assets/img/icon-security.png'
-
+import iconChat from "../../assets/img/icon-chat.png";
+import iconMoney from "../../assets/img/icon-money.png";
+import iconSecurity from "../../assets/img/icon-security.png";
+import "./home.scss";
 
 function Home() {
   return (
@@ -44,7 +44,7 @@ function Home() {
         </div>
       </section>
     </main>
-  )
+  );
 }
 
-export default Home
+export default Home;

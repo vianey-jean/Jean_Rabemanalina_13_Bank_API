@@ -1,10 +1,9 @@
 import React from 'react'
 import { Outlet } from "react-router-dom";
-import Header from '../components/Header'
-import Home from '../pages/Home'
-import SignIn from '../pages/loginPage/SingIn'
-import Footer from '../components/Footer'
-import Error from '../pages/Error'
+import Nav from '../components/nav/nav'
+import Home from '../pages/home/home'
+import Footer from '../components/footer/footer'
+import LogIn from '../pages/logIn/logIn'
 
 
 export const routes = [
@@ -17,13 +16,10 @@ export const routes = [
               element: <Home />,
           },
           {
-            path: "/signIn",
-            element: <SignIn />,
+            path: "/logIn",
+            element: <LogIn />,
         },
-          {
-              path: "*",
-              element: <Error />,
-          },
+      
       ],
   },
 ];
@@ -31,7 +27,7 @@ export const routes = [
 function Layout () {  // par défaut, c'est header, sidebar et outlet qui change
   return (
 <>
-  <Header />
+  <Nav/>
   <section className="elementsToDisplay">
       <Outlet />
   </section>
