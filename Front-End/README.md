@@ -34,22 +34,22 @@ SportSee project is an application for sportive people that want to follow their
 ---
 #### server API:
 - Install dependencies
-- npm install
+- open a new terminal and run `npm install`
 ---
 - Start local dev server
-- npm run dev:server
+- `npm run dev:server`
 
 ---
 #### Front-End:
 - open a new terminal and run `cd Front-end` command,
-- then run `npm install` ans `npm start` command
+- then run `npm install` and `npm start` command
 
 ### Author
-- ![Jean Marie Vianey RABEMANALINA](https://github.com/vianey-jean)
+- [Jean Marie Vianey RABEMANALINA](https://github.com/vianey-jean)
 
 ---
 
 ### Delivrable:
 
-- ![React app Code](https://github.com/vianey-jean/Jean_Rabemanalina_13_Bank_API)  
+- [React app Code](https://github.com/vianey-jean/Jean_Rabemanalina_13_Bank_API)  
 
