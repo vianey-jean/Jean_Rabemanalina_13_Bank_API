@@ -4,6 +4,8 @@ import Nav from '../components/nav/nav'
 import Home from '../pages/home/home'
 import Footer from '../components/footer/footer'
 import LogIn from '../pages/logIn/logIn'
+import LogOut from "../pages/Logout/Logout";
+import Erreur404 from "../pages/404/404";
 import User from '../pages/user/user'
 
 export const routes = [
@@ -20,9 +22,17 @@ export const routes = [
             element: <LogIn />,
         },
         {
+          path: "/logOut",
+          element: <LogOut />,
+      },
+        {
           path: "/user",
           element: <User />,
       },
+      {
+        path: "*",
+        element: <Erreur404 />,
+    },
       
       ],
   },
