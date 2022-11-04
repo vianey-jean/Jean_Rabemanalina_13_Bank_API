@@ -32,14 +32,15 @@ SportSee project is an application for sportive people that want to follow their
 ### Installing the app
 - Forke and clone the repository : https://github.com/vianey-jean/Jean_Rabemanalina_13_Bank_API.git
 ---
-- server API:
+#### server API:
 - Install dependencies
 - npm install
-# Start local dev server
+---
+- Start local dev server
 - npm run dev:server
 
 ---
-- Front-End:
+#### Front-End:
 - open a new terminal and run `cd Front-end` command,
 - then run `npm install` ans `npm start` command
 
