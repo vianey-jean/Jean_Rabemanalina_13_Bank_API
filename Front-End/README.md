@@ -15,7 +15,7 @@ SportSee project is an application for sportive people that want to follow their
 
 ## Prerequisites
 
-- ![NodeJS (**version 14.17.3**)](https://nodejs.org/en/blog/release/v14.17.3/)
+- [NodeJS (**version 14.17.3**)](https://nodejs.org/en/blog/release/v14.17.3/)
 - ![NPM (**version 8.19.2**)](https://www.npmjs.com/)
 - ![REACT (**version 18.2.0**)](https://en.reactjs.org/) 
 - ![Recharts (**version 2.1.14**)](https://recharts.org/en-US/ )
