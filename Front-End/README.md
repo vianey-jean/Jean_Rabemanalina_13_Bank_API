@@ -16,16 +16,16 @@ SportSee project is an application for sportive people that want to follow their
 ## Prerequisites
 
 - [NodeJS (**version 14.17.3**)](https://nodejs.org/en/blog/release/v14.17.3/)
-- ![NPM (**version 8.19.2**)](https://www.npmjs.com/)
-- ![REACT (**version 18.2.0**)](https://en.reactjs.org/) 
-- ![Recharts (**version 2.1.14**)](https://recharts.org/en-US/ )
-- ![React-router-dom(**version 18.2.0**)](https://en.reactjs.org/)
-- ![React-dom(**version 18.2.0**)](https://en.reactjs.org/)
-- ![sass (**version 1.55.0**)](https://sass-lang.com/install)
-- ![react-redux (**version 8.0.5**)](https://react-redux.js.org/introduction/getting-started)
-- ![redux (**version 4.2.0**)](https://redux.js.org/introduction/installation/)
-- ![@reduxjs/toolkit (**version 1.9.0**)](https://www.npmjs.com/package/@reduxjs/toolkit)
-- ![VsCode](https://code.visualstudio.com/)
+- [NPM (**version 8.19.2**)](https://www.npmjs.com/)
+- [REACT (**version 18.2.0**)](https://en.reactjs.org/) 
+- [Recharts (**version 2.1.14**)](https://recharts.org/en-US/ )
+- [React-router-dom(**version 18.2.0**)](https://en.reactjs.org/)
+- [React-dom(**version 18.2.0**)](https://en.reactjs.org/)
+- [sass (**version 1.55.0**)](https://sass-lang.com/install)
+- [react-redux (**version 8.0.5**)](https://react-redux.js.org/introduction/getting-started)
+- [redux (**version 4.2.0**)](https://redux.js.org/introduction/installation/)
+- [@reduxjs/toolkit (**version 1.9.0**)](https://www.npmjs.com/package/@reduxjs/toolkit)
+- [VsCode](https://code.visualstudio.com/)
 
 
 ---
