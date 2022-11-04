@@ -7,7 +7,7 @@
 
 ---
 
-![logo](Front-end/src/assets/img/argentBankLogo.png)
+![logo](src/assets/img/argentBankLogo.png)
 
 ### Presentation
 
