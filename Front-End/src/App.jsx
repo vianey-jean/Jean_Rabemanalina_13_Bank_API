@@ -1,9 +1,11 @@
-import { useRoutes } from "react-router-dom";
-import { routes } from "./router/Routes";
+import Routes from "./router/Routes";
 
 function App() {
-  let elementsToDisplay = useRoutes(routes);
-  return <main className="App">{elementsToDisplay}</main>;
+  return (
+    <>
+      <Routes />
+    </>
+  );
 }
 
 export default App;
