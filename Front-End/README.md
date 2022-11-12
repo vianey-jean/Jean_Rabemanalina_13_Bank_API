@@ -11,7 +11,7 @@
 
 ### Presentation
 
-SportSee project is an application for sportive people that want to follow their daily progress through analytics dashboard.
+ARGENT BANK: Use an API for a bank user account with React.
 
 ## Prerequisites
 
