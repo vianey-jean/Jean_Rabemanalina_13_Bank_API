@@ -1,14 +1,14 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { Button, Alert } from "react-bootstrap";
-import { userLogin } from "../../services/userLogin";
+import { userLogin } from "../services/userLogin";
 import { useSelector, useDispatch } from "react-redux";
 import {
   logingPending,
   logingSuccess,
   logingError,
   logingRemember,
-} from "../../features/token/loginSlice";
+} from "../features/token/loginSlice";
 
 function SingIn() {
   const { isLoading, error, isRemember } = useSelector((state) => state.login);
