@@ -7,7 +7,7 @@ import {
   profileError,
 } from "../features/token/profileSlice";
 import UserHeader from "../componenets/userHeader";
-import ProfileAccounts from "../componenets/ProfileAccounts";
+import ProfileAccounts from "../componenets/UserAccounts";
 import axios from "axios";
 
 const token = localStorage.getItem("token");
