@@ -1,10 +1,11 @@
 import axios from "axios";
-import { URL_LOGIN } from "../config";
+
 
 export async function userLogin(credientials) {
   return new Promise(async (resolve, reject) => {
     try {
-      const res = await axios.post(URL_LOGIN, credientials);
+      //console.log(process.env.REACT_APP_API_URL_LOG)
+      const res = await axios.post(process.env.REACT_APP_API_URL_LOG, credientials);
       const token = res.data.body.token;
       if (token)
         axios.defaults.headers.common["Authorization"] = `Bearer ${token}`;

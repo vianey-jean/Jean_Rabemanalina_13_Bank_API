@@ -18,12 +18,12 @@ function LogIn() {
   return (
     <>
       {isAuth ? (
-        <Link className="main-nav-link" to="/profilePage/Profile">
+        <Link className="main-nav-link" to="/user">
           <i className="fa fa-user-circle"></i>
           {firstName}
         </Link>
       ) : (
-        <Link className="main-nav-link" to="/loginPage/signIn">
+        <Link className="main-nav-link" to="/signIn">
           <i className="fa fa-user-circle"></i>
           Sign In
         </Link>

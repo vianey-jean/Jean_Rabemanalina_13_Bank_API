@@ -15,9 +15,9 @@ function RoutesPath() {
       <section className="elementsToDisplay">
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/loginPage/signIn" element={<SignIn />} />
-          <Route path="/profilePage/Profile" element={<PrivateRoute />}>
-            <Route path="/profilePage/Profile" element={<Profile />} />
+          <Route path="/signIn" element={<SignIn />} />
+          <Route path="/user" element={<PrivateRoute />}>
+            <Route path="/user" element={<Profile />} />
           </Route>
           <Route path="*" element={<Error />} />
         </Routes>

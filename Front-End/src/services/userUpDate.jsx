@@ -1,12 +1,12 @@
 import axios from "axios";
-import { URL_PROFILE } from "../config";
 
 
 export async function userUpDate(userFirstLastName) {
   console.log(userFirstLastName);
   return new Promise(async (resolve, reject) => {
     try {
-      const res = await axios.put(URL_PROFILE, userFirstLastName);
+      //console.log(process.env.REACT_APP_API_URL_PF)
+      const res = await axios.put(process.env.REACT_APP_API_URL_PF, userFirstLastName);
 
       console.log(res);
 

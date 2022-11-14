@@ -41,7 +41,7 @@ function SingIn() {
       }
 
       dispatch(logingSuccess());
-      navigate("/profilePage/Profile");
+      navigate("/user");
     } catch (error) {
       console.log(error);
       dispatch(logingError(error.response.data.message));
