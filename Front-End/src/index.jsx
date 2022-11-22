@@ -7,7 +7,7 @@ import App from './App'
 
 /**
  * @file root folder of the application
- * @author Jean RABEMANALINA
+ * @author Jean Marie Vianey RABEMANALINA
  * @see <a href="https://github.com/vianey-jean/Jean_Rabemanalina_13_Bank_API" target ="_blank"></a>
  */
 
