@@ -1,3 +1,8 @@
+/**
+ * Component - Footer
+ * @returns {React.ReactElement} JSX.Element - Footer component
+ */
+
 function Footer() {
   return (
     <footer className="footer">

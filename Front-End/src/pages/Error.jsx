@@ -1,3 +1,8 @@
+/**
+ * ERROR PAGE
+ * @returns {React.ReactElement} JSX.Element error page
+ */
+
 
 function Error() {
   return (

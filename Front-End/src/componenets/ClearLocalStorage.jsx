@@ -3,6 +3,10 @@ import { useDispatch } from 'react-redux'
 // @ts-ignore
 import { logingOut } from '../pages/loginPage/loginSlice'
 
+/**
+ * Component - ClearLocalStorage
+ */
+
 
 export function ClearLocalStorage() {
   const dispatch = useDispatch()

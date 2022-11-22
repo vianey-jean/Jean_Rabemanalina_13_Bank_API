@@ -8,6 +8,11 @@ import PrivateRoute from "../componenets/PrivateRoute";
 import SignIn from "../pages/SingIn";
 import Footer from "../componenets/Footer";
 
+
+/**
+ *  Dom injector, creation of router and privateRouter
+ * @returns  routes
+ */
 function RoutesPath() {
   return (
     <BrowserRouter>

@@ -3,6 +3,12 @@ import { Link } from "react-router-dom";
 import { useSelector, useDispatch } from "react-redux";
 import { profileFirstName } from "../features/token/profileSlice";
 
+/**
+ * Component - Header
+ * @returns {React.ReactElement} JSX.Element - header component
+ */
+
+
 function LogIn() {
   const dispatch = useDispatch();
   const { isAuth } = useSelector((state) => state.login);

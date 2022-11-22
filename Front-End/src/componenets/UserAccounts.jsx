@@ -1,3 +1,9 @@
+/**
+ * Component - User
+ * @returns {React.ReactElement} JSX.Element - User component
+ */
+
+
 function ProfileAccounts() {
   return (
     <>

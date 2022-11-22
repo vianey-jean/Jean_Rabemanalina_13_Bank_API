@@ -4,6 +4,11 @@ import { useSelector, useDispatch } from "react-redux";
 import { logingOut } from "../features/token/loginSlice";
 import { profileOut } from "../features/token/profileSlice";
 
+/**
+ * Component - Header
+ * @returns {React.ReactElement} JSX.Element - header component
+ */
+
 function LogOut() {
   const { isAuth } = useSelector((state) => state.login);
   const dispatch = useDispatch();

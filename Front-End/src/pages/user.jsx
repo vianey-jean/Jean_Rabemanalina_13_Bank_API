@@ -10,6 +10,12 @@ import UserHeader from "../componenets/userHeader";
 import ProfileAccounts from "../componenets/UserAccounts";
 import axios from "axios";
 
+/**
+ * Component - User ptofile
+ * @returns {React.ReactElement} JSX.Element - User component
+ */
+
+
 const token = localStorage.getItem("token");
 if (token) {
   axios.defaults.headers.common["Authorization"] = `Bearer ${token}`;

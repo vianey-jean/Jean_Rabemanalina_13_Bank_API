@@ -10,6 +10,11 @@ import {
   logingRemember,
 } from "../features/token/loginSlice";
 
+/**
+ * Component - SingIn
+ * @returns {React.ReactElement} JSX.Element - SingIn component
+ */
+
 function SingIn() {
   const { isLoading, error, isRemember } = useSelector((state) => state.login);
   const dispatch = useDispatch();

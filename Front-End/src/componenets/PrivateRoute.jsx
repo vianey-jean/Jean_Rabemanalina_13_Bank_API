@@ -2,6 +2,10 @@ import { Navigate, Outlet } from "react-router-dom";
 import { useSelector, useDispatch } from "react-redux";
 import { logingSuccess,logingOut} from "../features/token/loginSlice";
 
+/**
+ * Component - PrivateRoute
+ */
+
 function PrivateRoute() {
   const dispatch = useDispatch();
   const token = localStorage.getItem("token")|| sessionStorage.getItem('token');

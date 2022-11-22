@@ -8,6 +8,11 @@ import {
 } from "../features/token/profileSlice";
 import { userUpDate } from "../services/userUpDate";
 
+/**
+ * Component user header
+ * @returns {React.ReactElement} JSX.Element - userHeader component
+ */
+
 function UserHeader() {
   const dispatch = useDispatch();
   const localStorageFirstName = localStorage.getItem("firstName");
