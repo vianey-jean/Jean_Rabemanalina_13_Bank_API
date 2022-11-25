@@ -9,7 +9,7 @@ import axios from "axios";
  */
 
 
-export async function userUpDate(userFirstLastName) {
+export async function userUpDate(userFirstLastName) { //mise a jour des donner via API sur profil
   console.log(userFirstLastName);
   return new Promise(async (resolve, reject) => {
     try {

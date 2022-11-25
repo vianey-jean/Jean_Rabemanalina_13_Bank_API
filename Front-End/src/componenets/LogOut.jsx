@@ -9,11 +9,11 @@ import { profileOut } from "../features/token/profileSlice";
  * @returns {React.ReactElement} JSX.Element - header component
  */
 
-function LogOut() {
+function LogOut() { //création logout
   const { isAuth } = useSelector((state) => state.login);
   const dispatch = useDispatch();
 
-  function ClearLocalStorage() {
+  function ClearLocalStorage() { //supprimer le localstorage 
     localStorage.clear();
 
     dispatch(logingOut());
@@ -22,7 +22,7 @@ function LogOut() {
 
   return (
     <>
-      {isAuth && (
+      {isAuth && ( // si c'est connecter alors affiche  au lieu de singin, ça sera singout, supprimer localstorage et dirriger vers acceuil
         <Link
           className="main-nav-item"
           onClick={() => ClearLocalStorage()}

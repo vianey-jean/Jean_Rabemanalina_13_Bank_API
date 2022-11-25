@@ -6,24 +6,23 @@ import { logingSuccess,logingOut} from "../features/token/loginSlice";
  * Component - PrivateRoute
  */
 
-function PrivateRoute() {
+function PrivateRoute() { //création private routes
   const dispatch = useDispatch();
   const token = localStorage.getItem("token")|| sessionStorage.getItem('token');
 
   // keeps you logged in while refreshing
   if (token) {
-    dispatch(logingSuccess());
+    dispatch(logingSuccess()); //si le token est en loginsucces
   }
-  const { isAuth } = useSelector((state) => state.login) ;
-  if(!isAuth){ 
+  const { isAuth } = useSelector((state) => state.login) ;// si je suis connecter, alors je suis dirriger vers user
+  if(!isAuth){  // si non, j'efface le locastorage et la sessions
     localStorage.clear()
     sessionStorage.clear()
-    dispatch(logingOut())
-    return <Navigate to="/signIn" />
-    //Navigate ("/loginPage/signIn")
+    dispatch(logingOut()) //puis  c'est changer vers loginout
+    return <Navigate to="/signIn" /> // enfin dirriger vers singin.
+   
   }
   return <Outlet/>//restitue les routes enfants
-  //return isAuth ? <Outlet /> : <Navigate to="/loginPage/signIn" />;
 }
 
 

@@ -1,33 +1,33 @@
 import { createSlice } from '@reduxjs/toolkit'
 
-const initialState = {
-  isLoading: false,
-  isAuth: false,
+const initialState = {//initialstate
+  isLoading: false, //loading faux
+  isAuth: false, //autehtifié faux
   isRemember: false,
-  error: '',
+  error: '', //erreur vide
 }
 
-const loginSlice = createSlice({
+const loginSlice = createSlice({ //création login
   name: 'login',
   initialState,
   reducers: {
     logingPending: (state) => {
-      state.isLoading = true
+      state.isLoading = true //chargement vrai
     },
-    logingSuccess: (state) => {
+    logingSuccess: (state) => { //login succes
       state.isLoading = false
-      state.isAuth = true
-      state.error = ''
+      state.isAuth = true //authetifier vrai
+      state.error = '' //erreur vide
     },
-    logingError: (state, action) => {
-      state.isLoading = false
-      state.error = action.payload
+    logingError: (state, action) => { //login erreur
+      state.isLoading = false //chargement faux
+      state.error = action.payload // montrer l'erreur 
     },
     logingRemember: (state, action) => {
       state.isRemember = action.payload
     },
-    logingOut: (state) => {
-      state.isAuth = false
+    logingOut: (state) => {//logout
+      state.isAuth = false //authetifié erreur
     },
   },
 })

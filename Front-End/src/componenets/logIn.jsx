@@ -9,7 +9,7 @@ import { profileFirstName } from "../features/token/profileSlice";
  */
 
 
-function LogIn() {
+function LogIn() { //mise en place le login et les lien
   const dispatch = useDispatch();
   const { isAuth } = useSelector((state) => state.login);
   const { firstName } = useSelector((state) => state.profile);
@@ -23,7 +23,7 @@ function LogIn() {
 
   return (
     <>
-      {isAuth ? (
+      {isAuth ? ( //si ce n'est pas connecter, alors affiche icon et singin
         <Link className="main-nav-link" to="/user">
           <i className="fa fa-user-circle"></i>
           {firstName}

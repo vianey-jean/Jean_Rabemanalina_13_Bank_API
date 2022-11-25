@@ -7,32 +7,32 @@ const initialState = {
   error: "",
 };
 
-const profileSlice = createSlice({
+const profileSlice = createSlice({ //création slice profil
   name: "profile",
   initialState,
   reducers: {
     profilePending: (state) => {
-      state.isLoading = true;
+      state.isLoading = true; // chargement vrai
     },
-    profileFirstName: (state, action) => {
-      state.isLoading = false;
-      state.firstName = action.payload;
-      state.error = "";
+    profileFirstName: (state, action) => {//prénom
+      state.isLoading = false; // chagmenet faux
+      state.firstName = action.payload; //Ajout du prénom
+      state.error = ""; //erreur vide
     },
-    profileLastName: (state, action) => {
-      state.isLoading = false;
-      state.lastName = action.payload;
-      state.error = "";
+    profileLastName: (state, action) => { //nom
+      state.isLoading = false; //chargement faux
+      state.lastName = action.payload; //ajout du nom
+      state.error = "";//erreur faux
     },
     profileError: (state, action) => {
-      state.isLoading = false;
-      state.error = action.payload;
+      state.isLoading = false; //chargement faux
+      state.error = action.payload; //montrer erreur
     },
-    profileOut: (state) => {
-      state.isLoading = false;
-      state.firstName = "";
-      state.lastName = "";
-      state.error = "";
+    profileOut: (state) => { //pour le profil sur deconnecter
+      state.isLoading = false; //chargement faux
+      state.firstName = ""; //prénom vide
+      state.lastName = ""; //nom vide
+      state.error = ""; //erreur vide
     },
   },
 });

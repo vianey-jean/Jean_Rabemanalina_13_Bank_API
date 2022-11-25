@@ -5,7 +5,7 @@ import axios from "axios";
  * @returns {Promise<any>} Promise with user datas
  */
 
-export async function userDatas() {
+export async function userDatas() {  //récupération de donner vers API sur profil
   return new Promise(async (resolve, reject) => {
     try {
       const res = await axios.post(process.env.REACT_APP_API_URL_PF);

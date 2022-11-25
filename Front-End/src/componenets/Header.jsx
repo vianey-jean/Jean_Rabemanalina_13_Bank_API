@@ -11,7 +11,7 @@ import LogIn from "./logIn";
  * @returns {React.ReactElement} JSX.Element - header component
  */
 
-function Header() {
+function Header() { //mise en place le header avec le logo et mettre si c'est login ou logout
   return (
     <header>
       <nav className="main-nav">

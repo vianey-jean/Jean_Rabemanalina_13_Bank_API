@@ -8,7 +8,7 @@ import axios from "axios";
  * @returns {Promise<any>} Promise with user datas
  */
 
-export async function userLogin(credientials) {
+export async function userLogin(credientials) { //récupèration API sur login
   return new Promise(async (resolve, reject) => {
     try {
       //console.log(process.env.REACT_APP_API_URL_LOG)

@@ -4,7 +4,7 @@
  */
 
 
-function ProfileAccounts() {
+function ProfileAccounts() { //mise en forme la page profil account
   return (
     <>
       <h2 className="sr-only">Accounts</h2>

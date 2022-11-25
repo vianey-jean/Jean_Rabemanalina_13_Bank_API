@@ -22,22 +22,22 @@ function SingIn() {
   const [credientials, setCredientials] = useState({
     email: "",
     password: "",
-  });
+  }); // pour creer le loading pendant le chargement de verification.
 
   function handelChange({ currentTarget }) {
     const { value, name } = currentTarget;
     setCredientials({
       ...credientials,
       [name]: value,
-    });
+    }); //récupère les valeur dans le formulaire de connexion.
   }
 
-  async function handelSubmit(e) {
+  async function handelSubmit(e) { //pour la validation
     e.preventDefault();
 
     dispatch(logingPending());
     try {
-      const isAuth = await userLogin(credientials);
+      const isAuth = await userLogin(credientials); // attendre dans la API si la valeur entre est correcte.
 
       if (isRemember) {
         localStorage.setItem("token", isAuth.body.token);
@@ -45,11 +45,11 @@ function SingIn() {
         localStorage.removeItem("token");
       }
 
-      dispatch(logingSuccess());
-      navigate("/user");
-    } catch (error) {
+      dispatch(logingSuccess());//si le login est en succes
+      navigate("/user"); // alors je suis dirriger vers user
+    } catch (error) { //si on erreur
       console.log(error);
-      dispatch(logingError(error.response.data.message));
+      dispatch(logingError(error.response.data.message)); //montrer le message erreur
     }
   }
 
