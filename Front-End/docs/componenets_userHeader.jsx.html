@@ -110,20 +110,20 @@ function UserHeader() {
   const localStorageLastName = localStorage.getItem("lastName");
   const { firstName, lastName } = useSelector((state) => state.profile);
 
-  useEffect(() => {
+  useEffect(() => { //création du hook pour localstorage du nom et prénom
     if (localStorageFirstName &amp;&amp; localStorageLastName) {
       dispatch(profileFirstName(localStorageFirstName));
       dispatch(profileLastName(localStorageLastName));
     }
   }, [dispatch, localStorageFirstName, localStorageLastName]);
 
-  const [editButton, setEditButton] = useState("");
-  const [userFirstLastName, setUserFirstLastName] = useState({
+  const [editButton, setEditButton] = useState(""); 
+  const [userFirstLastName, setUserFirstLastName] = useState({ //mettre le nom et prénom a vide
     firstName: "",
     lastName: "",
   });
 
-  function handelChange({ currentTarget }) {
+  function handelChange({ currentTarget }) {// récupère la valeur du nom et prénom saisie
     const { value, name } = currentTarget;
     setUserFirstLastName({
       ...userFirstLastName,
@@ -131,7 +131,7 @@ function UserHeader() {
     });
   }
 
-  function editNameButton(e) {
+  function editNameButton(e) {// création du boutton edit
     e.preventDefault();
     setEditButton((current) => !current);
   }
@@ -139,12 +139,12 @@ function UserHeader() {
   async function submitHandler(e) {
     e.preventDefault();
     dispatch(profilePending());
-    try {
+    try { //changement et mise a jour du profil (nom et prénom)
       const newUser = await userUpDate(userFirstLastName);
       dispatch(profileFirstName(newUser.body.firstName));
       dispatch(profileLastName(newUser.body.lastName));
       setEditButton((current) => !current);
-    } catch (error) {
+    } catch (error) { // si non message erreur
       dispatch(profileError(error.response.data.message));
     }
   }

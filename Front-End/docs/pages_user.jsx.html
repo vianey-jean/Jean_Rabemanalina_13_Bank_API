@@ -116,7 +116,7 @@ function Profile() {
   const dispatch = useDispatch();
   const { isRemember } = useSelector((state) => state.login);
 
-  userDatas()
+  userDatas() //on récupère les nom et prénom du profil de connecter sur API et mettre en place
     .then((data) => {
       dispatch(profileFirstName(data.body.firstName));
       dispatch(profileLastName(data.body.lastName));
@@ -133,8 +133,8 @@ function Profile() {
 
   return (
     &lt;main className="main bg-dark">
-      &lt;UserHeader />
-      &lt;ProfileAccounts />
+      &lt;UserHeader /> {/**formulaire de mise a jour du profil */}
+      &lt;ProfileAccounts /> {/**mise en page du profile account */}
     &lt;/main>
   );
 }
