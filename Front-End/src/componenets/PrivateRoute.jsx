@@ -2,6 +2,7 @@ import { Navigate, Outlet } from "react-router-dom";
 import { useSelector, useDispatch } from "react-redux";
 import { logingSuccess,logingOut} from "../features/token/loginSlice";
 
+
 /**
  * Component - PrivateRoute
  */
@@ -9,6 +10,7 @@ import { logingSuccess,logingOut} from "../features/token/loginSlice";
 function PrivateRoute() { //création private routes
   const dispatch = useDispatch();
   const token = localStorage.getItem("token")|| sessionStorage.getItem('token');
+  //const token = localStorage.removeItem("token")|| sessionStorage.removeItem('token'); //ici C'est plus de securisation meme on active remember me
 
   // keeps you logged in while refreshing
   if (token) {

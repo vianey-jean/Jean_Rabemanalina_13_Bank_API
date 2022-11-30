@@ -5,7 +5,7 @@ import Home from "../pages/Home";
 import Profile from "../pages/user";
 import Error from "../pages/Error";
 import PrivateRoute from "../componenets/PrivateRoute";
-import SignIn from "../pages/SingIn";
+import SingIn from "../pages/SingIn";
 import Footer from "../componenets/Footer";
 
 
@@ -20,7 +20,7 @@ function RoutesPath() {
       <section className="elementsToDisplay">
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/signIn" element={<SignIn />} />
+          <Route path="/signIn" element={<SingIn />} />
           <Route path="/user" element={<PrivateRoute />}>
             <Route path="/user" element={<Profile />} />
           </Route>

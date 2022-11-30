@@ -15,10 +15,8 @@ export async function userUpDate(userFirstLastName) { //mise a jour des donner v
     try {
       //console.log(process.env.REACT_APP_API_URL_PF)
       const res = await axios.put(process.env.REACT_APP_API_URL_PF, userFirstLastName);
-
-      console.log(res);
-
       resolve(res.data);
+      console.log(res.data);
     } catch (error) {
       console.log("error userUpDate");
       console.log(error);

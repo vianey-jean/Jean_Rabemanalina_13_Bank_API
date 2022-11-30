@@ -18,6 +18,7 @@ export async function userLogin(credientials) { //récupèration API sur login
         axios.defaults.headers.common["Authorization"] = `Bearer ${token}`;
       else delete axios.defaults.headers.common["Authorization"];
       resolve(res.data);
+      console.log(res.data)
     } catch (error) {
       reject(error);
     }

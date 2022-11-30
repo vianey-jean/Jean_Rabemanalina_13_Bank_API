@@ -10,6 +10,7 @@ export async function userDatas() {  //récupération de donner vers API sur pro
     try {
       const res = await axios.post(process.env.REACT_APP_API_URL_PF);
       resolve(res.data);
+      console.log(res.data)
     } catch (error) {
       reject(error);
     }

@@ -53,6 +53,7 @@ function UserHeader() {
       dispatch(profileFirstName(newUser.body.firstName));
       dispatch(profileLastName(newUser.body.lastName));
       setEditButton((current) => !current);
+      alert('Update user is successfuly')
     } catch (error) { // si non message erreur
       dispatch(profileError(error.response.data.message));
     }
