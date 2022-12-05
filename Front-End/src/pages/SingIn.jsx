@@ -16,7 +16,7 @@ import {
  */
 
 function SingIn() {
-  const { isLoading, error, isRemember } = useSelector((state) => state.login);
+  const { isLoading, error, isRemember } = useSelector((state) => state.login);// dans le state golabe de redux, je veux seulement le state login
   const dispatch = useDispatch();
   let navigate = useNavigate();
   const [credientials, setCredientials] = useState({

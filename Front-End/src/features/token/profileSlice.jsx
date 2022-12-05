@@ -11,24 +11,29 @@ const profileSlice = createSlice({ //création slice profil
   name: "profile",
   initialState,
   reducers: {
-    profilePending: (state) => {
+    // création fonction (seulement une state)
+    profilePending: (state) => { //fonctionalité de profil pending
       state.isLoading = true; // chargement vrai
     },
-    profileFirstName: (state, action) => {//prénom
+    // création fonction (une state et une action)
+    profileFirstName: (state, action) => {// fonctionalité de prénom
       state.isLoading = false; // chagmenet faux
       state.firstName = action.payload; //Ajout du prénom
       state.error = ""; //erreur vide
     },
-    profileLastName: (state, action) => { //nom
+    // création fonction (une state et une action)
+    profileLastName: (state, action) => { //fonctionalité de nom
       state.isLoading = false; //chargement faux
       state.lastName = action.payload; //ajout du nom
       state.error = "";//erreur faux
     },
-    profileError: (state, action) => {
+    // création fonction (une state et une action)
+    profileError: (state, action) => {// fonctionalité de profil erreur
       state.isLoading = false; //chargement faux
       state.error = action.payload; //montrer erreur
     },
-    profileOut: (state) => { //pour le profil sur deconnecter
+    // création fonction (seulement une state)
+    profileOut: (state) => { //fonctionbalité pour le profil sur deconnecter
       state.isLoading = false; //chargement faux
       state.firstName = ""; //prénom vide
       state.lastName = ""; //nom vide

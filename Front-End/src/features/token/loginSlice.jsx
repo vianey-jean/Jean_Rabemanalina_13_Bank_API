@@ -7,26 +7,31 @@ const initialState = {//initialstate
   error: '', //erreur vide
 }
 
-const loginSlice = createSlice({ //création login
+const loginSlice = createSlice({ //création slice login
   name: 'login',
   initialState,
-  reducers: {
-    logingPending: (state) => {
+  reducers: { // Objet
+    // création fonction (seulement une state)
+    logingPending: (state) => { //fonctionnalité logingPening
       state.isLoading = true //chargement vrai
     },
-    logingSuccess: (state) => { //login succes
+    // création fonction (seulement une state)
+    logingSuccess: (state) => { //fonctionalité login succes
       state.isLoading = false
       state.isAuth = true //authetifier vrai
       state.error = '' //erreur vide
     },
-    logingError: (state, action) => { //login erreur
+    // création fonction (une state et une action)
+    logingError: (state, action) => { //fonctionnalité login erreur
       state.isLoading = false //chargement faux
       state.error = action.payload // montrer l'erreur 
     },
-    logingRemember: (state, action) => {
+    // création fonction (une state et une action)
+    logingRemember: (state, action) => { //fonctionalité loging remember
       state.isRemember = action.payload
     },
-    logingOut: (state) => {//logout
+    // création fonction (seulement une state)
+    logingOut: (state) => {// fonctionalité logout
       state.isAuth = false //authetifié erreur
     },
   },
