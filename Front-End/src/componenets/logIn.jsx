@@ -27,7 +27,7 @@ function LogIn() { //mise en place le login et les lien
         
           <Link className="main-nav-item" to="/user">
           <i className="fa fa-user-circle"></i>
-          <spam>{firstName}</spam>
+          {firstName}
         </Link>
    
         
