@@ -23,7 +23,7 @@ if (token) {
 
 function Profile() {
   const dispatch = useDispatch();
-  const { isRemember } = useSelector((state) => state.login);
+  const { isRemember } = useSelector((state) => state.login); //prendre le state de login
 
   userDatas() //on récupère les nom et prénom du profil de connecter sur API et mettre en place
     .then((data) => {

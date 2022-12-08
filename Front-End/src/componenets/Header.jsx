@@ -23,7 +23,7 @@ function Header() { //mise en place le header avec le logo et mettre si c'est lo
           />
           <h1 className="sr-only">Argent Bank</h1>
         </Link>
-        <div>
+        <div className="main-nav-item">
           <LogIn />
           <LogOut />
         </div>

@@ -21,16 +21,22 @@ function LogOut() { //création logout
   }
 
   return (
-    <>
+    < >
       {isAuth && ( // si c'est connecter alors affiche  au lieu de singin, ça sera singout, supprimer localstorage et dirriger vers acceuil
+       
         <Link
-          className="main-nav-item"
+        
+        className="main-nav-item"
           onClick={() => ClearLocalStorage()}
           to="/"
         >
-          <i className="fa-solid fa-arrow-right-from-bracket" />
+          <i className="fa fa-sign-out" />
+          
           Sign Out
+         
         </Link>
+        
+          
       )}
     </>
   );

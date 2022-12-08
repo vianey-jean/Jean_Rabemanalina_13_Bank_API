@@ -54,10 +54,18 @@ html {
   .main-nav-item {
     text-decoration: none;
     margin-right: 0.5rem;
+    display: flex;
+    align-items: center;
+  }
+  .main-nav-item fa{
+    margin-right: 5px;
   }
   
   .main-nav-item i{
     margin-right: 0.5rem;
+    justify-content: space-between;
+   
+    flex-direction: row;
   }
   
   .main-nav-item:hover {

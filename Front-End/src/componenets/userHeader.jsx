@@ -17,7 +17,7 @@ function UserHeader() {
   const dispatch = useDispatch();
   const localStorageFirstName = localStorage.getItem("firstName");
   const localStorageLastName = localStorage.getItem("lastName");
-  const { firstName, lastName } = useSelector((state) => state.profile);
+  const { firstName, lastName } = useSelector((state) => state.profile); //je selectionne le state profile
 
   useEffect(() => { //création du hook pour localstorage du nom et prénom
     if (localStorageFirstName && localStorageLastName) {

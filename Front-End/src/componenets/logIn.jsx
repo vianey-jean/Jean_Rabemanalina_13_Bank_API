@@ -24,10 +24,13 @@ function LogIn() { //mise en place le login et les lien
   return (
     <>
       {isAuth ? ( //si ce n'est pas connecter, alors affiche icon et singin
-        <Link className="main-nav-link" to="/user">
+        
+          <Link className="main-nav-item" to="/user">
           <i className="fa fa-user-circle"></i>
-          {firstName}
+          <spam>{firstName}</spam>
         </Link>
+   
+        
       ) : (
         <Link className="main-nav-link" to="/signIn">
           <i className="fa fa-user-circle"></i>
